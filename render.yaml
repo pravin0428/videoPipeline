@@ -1,0 +1,13 @@
+# Render Blueprint — one Docker web service for the Video Engine app.
+# In Render: New → Blueprint → pick this repo, and it reads this file.
+services:
+  - type: web
+    name: video-engine
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter          # 512MB free tier can OOM on 1080x1920 renders; starter is safer
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: PEXELS_API_KEY
+        sync: false        # set the value in the Render dashboard (kept out of git)

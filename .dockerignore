@@ -1,0 +1,15 @@
+# Keep the Docker build context small — only video_engine + webapp are copied.
+.git
+**/venv
+**/.venv
+**/__pycache__
+**/output
+atlas
+media_lab
+media_intelligence
+**/*.mp4
+**/*.mov
+**/*.mp3
+**/*.wav
+**/*.db
+.DS_Store
