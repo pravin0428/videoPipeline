@@ -1,0 +1,372 @@
+{
+  "script": [
+    "The Khajuraho temples are located in the Madhya Pradesh region of central India, nestled between the Vindhya mountain range and the dense forests of Bundelkhand.",
+    "Built between 950 and 1050 AD by the Chandela dynasty, these temples represent the pinnacle of medieval Indian architecture.",
+    "Of the original 85 temples, only about 25 have survived the passage of time, making it one of the most concentrated temple complexes in the world.",
+    "The temples are divided into three main groups: the Western, Eastern, and Southern clusters, each with its own distinct character.",
+    "As the Chandela kings expanded their empire, they commissioned more and more temples, each one more ornate than the last.",
+    "The intricate carvings on the temple walls depict celestial dancers in graceful poses, frozen in stone for over a thousand years.",
+    "These dancers, known as apsaras, represent the divine beauty that the sculptors sought to capture in every curve and contour.",
+    "The temple architecture follows the shikhara style, where the central spire rises like a mountain peak toward the heavens.",
+    "This design was not merely aesthetic but symbolic, representing Mount Meru, the mythical axis of the universe in Hindu cosmology.",
+    "The concept of spiritual ascent is embedded in every aspect of the temple design, guiding the devotee from the material world toward the divine.",
+    "Every evening, the priests perform the ancient ritual of aarti, waving lamps in circular motions before the deity as bells ring through the courtyard.",
+    "The warm glow of the oil lamps illuminates the dark sanctum, creating an atmosphere of profound devotion that has remained unchanged for centuries.",
+    "For the millions of visitors who come each year, Khajuraho is not merely a historical monument but a living testament to India's cultural heritage."
+  ],
+  "scenes": [
+    {
+      "sentence": "The Khajuraho temples are located in the Madhya Pradesh region of central India, nestled between the Vindhya mountain range and the dense forests of Bundelkhand.",
+      "media_type": "map",
+      "confidence": 0.9,
+      "reasoning": "Named place with geographic direction \u2014 map establishes spatial context for educational grounding.",
+      "visual_elements": [
+        "range",
+        "mountain"
+      ],
+      "search_prompt": "world map geography topography",
+      "generation_prompt": "Geographic map of range, mountain | Topographic style with elevation detail | Professional cartography, documentary quality",
+      "negative_prompt": "inaccurate, cartoony, childish, low resolution, blurry, watermark, text, labels",
+      "fallback_order": [
+        "stock_video",
+        "stock_photo",
+        "infographic"
+      ],
+      "quality_criteria": [
+        "Clearly shows the geographic location",
+        "Legible boundaries and labels",
+        "Matches the described region",
+        "Suitable for documentary context"
+      ],
+      "suggested_duration": 7.5,
+      "camera_style": "Standard documentary framing, even lighting, tripod-stable",
+      "visual_goal": "Establish geographic context for the viewer"
+    },
+    {
+      "sentence": "Built between 950 and 1050 AD by the Chandela dynasty, these temples represent the pinnacle of medieval Indian architecture.",
+      "media_type": "stock_photo",
+      "confidence": 0.65,
+      "reasoning": "Historical architecture \u2014 archival photo with Ken Burns evokes the period atmosphere.",
+      "visual_elements": [],
+      "search_prompt": "ancient",
+      "generation_prompt": "Cinematic documentary shot of the described subject | Sepia-toned, archival texture, static frame, grainy film look | Natural lighting, realistic textures, authentic atmosphere | National Geographic documentary quality, 4K resolution",
+      "negative_prompt": "watermark, text, logo, blurry, low resolution, overexposed, underexposed",
+      "fallback_order": [
+        "stock_video",
+        "map",
+        "ai_video"
+      ],
+      "quality_criteria": [
+        "High resolution",
+        "Matches the described scene",
+        "Good composition for Ken Burns pan",
+        "Cinematic lighting"
+      ],
+      "suggested_duration": 4.0,
+      "camera_style": "Sepia-toned, archival texture, static frame, grainy film look",
+      "visual_goal": "Make the statistic comprehensible at a glance"
+    },
+    {
+      "sentence": "Of the original 85 temples, only about 25 have survived the passage of time, making it one of the most concentrated temple complexes in the world.",
+      "media_type": "infographic",
+      "confidence": 0.85,
+      "reasoning": "Statistical data (85, 25) \u2014 infographic makes numbers comprehensible at a glance.",
+      "visual_elements": [
+        "temple"
+      ],
+      "search_prompt": "temple infographic chart data visualization statistics",
+      "generation_prompt": "Clean infographic visualization of temple | Modern data visualization style, clear typography | Minimalist design, professional color palette | Suitable for documentary, educational context",
+      "negative_prompt": "cluttered, messy, hard to read, small text, low contrast, ugly colors, blurry, low resolution, watermarked",
+      "fallback_order": [
+        "scientific_animation",
+        "stock_video",
+        "stock_photo"
+      ],
+      "quality_criteria": [
+        "Data is clearly visualized",
+        "Easy to read at a glance",
+        "Professional design aesthetic",
+        "Matches educational tone"
+      ],
+      "suggested_duration": 7.8,
+      "camera_style": "Clean well-lit shot, medium focal length, informative framing",
+      "visual_goal": "Make the statistic comprehensible at a glance"
+    },
+    {
+      "sentence": "The temples are divided into three main groups: the Western, Eastern, and Southern clusters, each with its own distinct character.",
+      "media_type": "stock_video",
+      "confidence": 0.5,
+      "reasoning": "General documentary narration \u2014 stock video provides versatile visual support for the spoken content.",
+      "visual_elements": [],
+      "search_prompt": "temples divided into three",
+      "generation_prompt": "Cinematic documentary shot of the described subject | Standard documentary framing, even lighting, tripod-stable | Natural lighting, realistic textures, authentic atmosphere | National Geographic documentary quality, 4K resolution",
+      "negative_prompt": "watermark, text, logo, blurry, low quality, shaky, overexposed, underexposed",
+      "fallback_order": [
+        "stock_photo",
+        "map",
+        "ai_video"
+      ],
+      "quality_criteria": [
+        "Matches the described scene",
+        "Smooth motion, no shakiness",
+        "Cinematic quality",
+        "Authentic, not staged-looking",
+        "Good lighting and composition"
+      ],
+      "suggested_duration": 4.0,
+      "camera_style": "Standard documentary framing, even lighting, tripod-stable",
+      "visual_goal": "Support the narration with relevant visuals"
+    },
+    {
+      "sentence": "As the Chandela kings expanded their empire, they commissioned more and more temples, each one more ornate than the last.",
+      "media_type": "stock_video",
+      "confidence": 0.5,
+      "reasoning": "General documentary narration \u2014 stock video provides versatile visual support for the spoken content.",
+      "visual_elements": [
+        "Mood: ornate"
+      ],
+      "search_prompt": "ornate",
+      "generation_prompt": "Cinematic documentary shot of the described subject | In ornate | Standard documentary framing, even lighting, tripod-stable | Natural lighting, realistic textures, authentic atmosphere | National Geographic documentary quality, 4K resolution",
+      "negative_prompt": "watermark, text, logo, blurry, low quality, shaky, overexposed, underexposed",
+      "fallback_order": [
+        "stock_photo",
+        "map",
+        "ai_video"
+      ],
+      "quality_criteria": [
+        "Matches the described scene",
+        "Smooth motion, no shakiness",
+        "Cinematic quality",
+        "Authentic, not staged-looking",
+        "Good lighting and composition"
+      ],
+      "suggested_duration": 4.0,
+      "camera_style": "Standard documentary framing, even lighting, tripod-stable",
+      "visual_goal": "Make the statistic comprehensible at a glance"
+    },
+    {
+      "sentence": "The intricate carvings on the temple walls depict celestial dancers in graceful poses, frozen in stone for over a thousand years.",
+      "media_type": "stock_video",
+      "confidence": 0.75,
+      "reasoning": "Rich sensory detail in a concrete scene \u2014 stock video captures the atmosphere better than other media.",
+      "visual_elements": [
+        "stone",
+        "temple",
+        "Mood: intricate"
+      ],
+      "search_prompt": "intricate stone temple",
+      "generation_prompt": "Cinematic documentary shot of stone, temple | In intricate | Clean well-lit shot, medium focal length, informative framing | Natural lighting, realistic textures, authentic atmosphere | National Geographic documentary quality, 4K resolution",
+      "negative_prompt": "watermark, text, logo, blurry, low quality, shaky, overexposed, underexposed",
+      "fallback_order": [
+        "stock_photo",
+        "map",
+        "ai_video"
+      ],
+      "quality_criteria": [
+        "Matches the described scene",
+        "Smooth motion, no shakiness",
+        "Cinematic quality",
+        "Authentic, not staged-looking",
+        "Good lighting and composition"
+      ],
+      "suggested_duration": 4.2,
+      "camera_style": "Clean well-lit shot, medium focal length, informative framing",
+      "visual_goal": "Immerse the viewer in the described scene"
+    },
+    {
+      "sentence": "These dancers, known as apsaras, represent the divine beauty that the sculptors sought to capture in every curve and contour.",
+      "media_type": "ai_video",
+      "confidence": 0.65,
+      "reasoning": "Abstract concept with no visual reference \u2014 AI generation can visualize the intangible.",
+      "visual_elements": [],
+      "search_prompt": "dancers, known apsaras, represent",
+      "generation_prompt": "Cinematic contemplative shot of the described subject | Slow push-in reveal, soft lens flare, shallow depth of field | Cinematic lighting, atmospheric, documentary quality | National Geographic style, 4K, shallow depth of field | Slow camera movement, professional composition",
+      "negative_prompt": "blurry, low quality, distorted, ugly, deformed, watermark, text, signature, cartoon, anime, oversaturated, unrealistic, artifacts, glitch, noise, grainy, dark, underexposed",
+      "fallback_order": [
+        "stock_video",
+        "stock_photo",
+        "map"
+      ],
+      "quality_criteria": [
+        "Visually coherent frames",
+        "Matches the described mood",
+        "Minimal artifacts or distortion",
+        "Cinematic quality",
+        "Realistic enough for documentary"
+      ],
+      "suggested_duration": 6.0,
+      "camera_style": "Slow push-in reveal, soft lens flare, shallow depth of field",
+      "visual_goal": "Visualize an intangible concept"
+    },
+    {
+      "sentence": "The temple architecture follows the shikhara style, where the central spire rises like a mountain peak toward the heavens.",
+      "media_type": "stock_video",
+      "confidence": 0.85,
+      "reasoning": "Concrete visual scene with movement \u2014 stock video provides immersive realism for documentary.",
+      "visual_elements": [
+        "spire",
+        "peak",
+        "temple",
+        "mountain"
+      ],
+      "search_prompt": "spire peak temple mountain",
+      "generation_prompt": "Cinematic documentary shot of spire, peak, temple | Clean well-lit shot, medium focal length, informative framing | Natural lighting, realistic textures, authentic atmosphere | National Geographic documentary quality, 4K resolution",
+      "negative_prompt": "watermark, text, logo, blurry, low quality, shaky, overexposed, underexposed",
+      "fallback_order": [
+        "stock_photo",
+        "map",
+        "ai_video"
+      ],
+      "quality_criteria": [
+        "Matches the described scene",
+        "Smooth motion, no shakiness",
+        "Cinematic quality",
+        "Authentic, not staged-looking",
+        "Good lighting and composition"
+      ],
+      "suggested_duration": 4.0,
+      "camera_style": "Clean well-lit shot, medium focal length, informative framing",
+      "visual_goal": "Immerse the viewer in the described scene"
+    },
+    {
+      "sentence": "This design was not merely aesthetic but symbolic, representing Mount Meru, the mythical axis of the universe in Hindu cosmology.",
+      "media_type": "stock_video",
+      "confidence": 0.5,
+      "reasoning": "General documentary narration \u2014 stock video provides versatile visual support for the spoken content.",
+      "visual_elements": [],
+      "search_prompt": "design not merely aesthetic",
+      "generation_prompt": "Cinematic documentary shot of the described subject | Clean well-lit shot, medium focal length, informative framing | Natural lighting, realistic textures, authentic atmosphere | National Geographic documentary quality, 4K resolution",
+      "negative_prompt": "watermark, text, logo, blurry, low quality, shaky, overexposed, underexposed",
+      "fallback_order": [
+        "stock_photo",
+        "map",
+        "ai_video"
+      ],
+      "quality_criteria": [
+        "Matches the described scene",
+        "Smooth motion, no shakiness",
+        "Cinematic quality",
+        "Authentic, not staged-looking",
+        "Good lighting and composition"
+      ],
+      "suggested_duration": 4.0,
+      "camera_style": "Clean well-lit shot, medium focal length, informative framing",
+      "visual_goal": "Showcase the cultural practice or artifact"
+    },
+    {
+      "sentence": "The concept of spiritual ascent is embedded in every aspect of the temple design, guiding the devotee from the material world toward the divine.",
+      "media_type": "stock_photo",
+      "confidence": 0.7,
+      "reasoning": "Concrete but static scene \u2014 high-quality photo with Ken Burns pan creates visual interest without requiring motion that doesn't exist.",
+      "visual_elements": [
+        "temple"
+      ],
+      "search_prompt": "temple",
+      "generation_prompt": "Cinematic documentary shot of temple | Slow push-in reveal, soft lens flare, shallow depth of field | Natural lighting, realistic textures, authentic atmosphere | National Geographic documentary quality, 4K resolution",
+      "negative_prompt": "watermark, text, logo, blurry, low resolution, overexposed, underexposed",
+      "fallback_order": [
+        "stock_video",
+        "map",
+        "ai_video"
+      ],
+      "quality_criteria": [
+        "High resolution",
+        "Matches the described scene",
+        "Good composition for Ken Burns pan",
+        "Cinematic lighting"
+      ],
+      "suggested_duration": 4.800000000000001,
+      "camera_style": "Slow push-in reveal, soft lens flare, shallow depth of field",
+      "visual_goal": "Immerse the viewer in the described scene"
+    },
+    {
+      "sentence": "Every evening, the priests perform the ancient ritual of aarti, waving lamps in circular motions before the deity as bells ring through the courtyard.",
+      "media_type": "stock_video",
+      "confidence": 0.5,
+      "reasoning": "General documentary narration \u2014 stock video provides versatile visual support for the spoken content.",
+      "visual_elements": [],
+      "search_prompt": "ancient",
+      "generation_prompt": "Cinematic documentary shot of the described subject | Sepia-toned, archival texture, static frame, grainy film look | Natural lighting, realistic textures, authentic atmosphere | National Geographic documentary quality, 4K resolution",
+      "negative_prompt": "watermark, text, logo, blurry, low quality, shaky, overexposed, underexposed",
+      "fallback_order": [
+        "stock_photo",
+        "map",
+        "ai_video"
+      ],
+      "quality_criteria": [
+        "Matches the described scene",
+        "Smooth motion, no shakiness",
+        "Cinematic quality",
+        "Authentic, not staged-looking",
+        "Good lighting and composition"
+      ],
+      "suggested_duration": 4.800000000000001,
+      "camera_style": "Sepia-toned, archival texture, static frame, grainy film look",
+      "visual_goal": "Reveal the mechanism behind the phenomenon"
+    },
+    {
+      "sentence": "The warm glow of the oil lamps illuminates the dark sanctum, creating an atmosphere of profound devotion that has remained unchanged for centuries.",
+      "media_type": "ai_video",
+      "confidence": 0.55,
+      "reasoning": "Emotion-driven content without concrete scene \u2014 AI video can evoke the feeling through atmospheric imagery.",
+      "visual_elements": [
+        "Mood: dark"
+      ],
+      "search_prompt": "dark devotion",
+      "generation_prompt": "Cinematic atmospheric shot of the described subject | Set in dark, devotion | Slow sweeping wide shot, golden hour lighting, dramatic clouds | Cinematic lighting, atmospheric, documentary quality | National Geographic style, 4K, shallow depth of field | Slow camera movement, professional composition",
+      "negative_prompt": "blurry, low quality, distorted, ugly, deformed, watermark, text, signature, cartoon, anime, oversaturated, unrealistic, artifacts, glitch, noise, grainy, dark, underexposed",
+      "fallback_order": [
+        "stock_video",
+        "stock_photo",
+        "map"
+      ],
+      "quality_criteria": [
+        "Visually coherent frames",
+        "Matches the described mood",
+        "Minimal artifacts or distortion",
+        "Cinematic quality",
+        "Realistic enough for documentary"
+      ],
+      "suggested_duration": 6.8999999999999995,
+      "camera_style": "Slow sweeping wide shot, golden hour lighting, dramatic clouds",
+      "visual_goal": "Reveal the mechanism behind the phenomenon"
+    },
+    {
+      "sentence": "For the millions of visitors who come each year, Khajuraho is not merely a historical monument but a living testament to India's cultural heritage.",
+      "media_type": "map",
+      "confidence": 0.8,
+      "reasoning": "Named place introduced \u2014 map provides geographic orientation before moving to visuals.",
+      "visual_elements": [
+        "Mood: millions"
+      ],
+      "search_prompt": "world map geography topography",
+      "generation_prompt": "Geographic map of the described subject | Political map with clear boundaries | Professional cartography, documentary quality",
+      "negative_prompt": "inaccurate, cartoony, childish, low resolution, blurry, watermark, text, labels",
+      "fallback_order": [
+        "stock_video",
+        "stock_photo",
+        "infographic"
+      ],
+      "quality_criteria": [
+        "Clearly shows the geographic location",
+        "Legible boundaries and labels",
+        "Matches the described region",
+        "Suitable for documentary context"
+      ],
+      "suggested_duration": 7.199999999999999,
+      "camera_style": "Sepia-toned, archival texture, static frame, grainy film look",
+      "visual_goal": "Establish geographic context for the viewer"
+    }
+  ],
+  "statistics": {
+    "total_sentences": 13,
+    "media_distribution": {
+      "map": 2,
+      "stock_photo": 2,
+      "infographic": 1,
+      "stock_video": 6,
+      "ai_video": 2
+    },
+    "estimated_duration_s": 69.2
+  }
+}

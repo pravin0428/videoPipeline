@@ -1,0 +1,103 @@
+{
+  "system": {
+    "timestamp": "2026-07-02T00:00:54.735348",
+    "hostname": "Pravin-Mohite.local",
+    "platform": "Darwin",
+    "architecture": "arm64",
+    "processor": "arm64",
+    "python_version": "3.12.13 (main, Mar  3 2026, 12:39:30) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "gpu": {
+      "cuda": false,
+      "mps": true,
+      "gpu_available": true,
+      "vram_gb": 17.2,
+      "note": "Apple Silicon shared memory: 17.2 GB"
+    },
+    "ram_gb": 17.2,
+    "ram_available_gb": 7.2,
+    "ffmpeg": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers",
+    "pytorch_version": "2.12.1",
+    "mps_built": true,
+    "diffusers_version": "0.38.0"
+  },
+  "results": [
+    {
+      "technique": "Pexels Stock Video",
+      "status": "completed",
+      "total_time_s": 19.954371690750122,
+      "generation_time_s": 1.6044847965240479,
+      "render_time_s": 18.349886894226074,
+      "peak_vram_gb": 0.0,
+      "peak_ram_gb": 0.04,
+      "output_file": "/Users/pravinmohite/Desktop/youtubePipeline/media_lab/output/pexels_video/pexels_final.mp4",
+      "output_resolution": "1080x1920",
+      "output_duration_s": 4.97,
+      "output_size_mb": 6.11,
+      "framerate": 30.0,
+      "error": "",
+      "notes": {
+        "query": "Khajuraho temple sunrise ancient architecture India",
+        "pexels_video_id": 12284773,
+        "matched_duration": 5,
+        "source_url": "https://videos.pexels.com/video-files/12284773/12284773-uhd_2160_3840_30fps.mp4"
+      }
+    },
+    {
+      "technique": "Pexels Photo + Ken Burns",
+      "status": "completed",
+      "total_time_s": 5.6245176792144775,
+      "generation_time_s": 0.0626378059387207,
+      "render_time_s": 5.561879873275757,
+      "peak_vram_gb": 0.0,
+      "peak_ram_gb": 0.09,
+      "output_file": "/Users/pravinmohite/Desktop/youtubePipeline/media_lab/output/pexels_photo_kb/photo_kb.mp4",
+      "output_resolution": "1080x1920",
+      "output_duration_s": 5.0,
+      "output_size_mb": 2.16,
+      "framerate": 25.0,
+      "error": "",
+      "notes": {
+        "query": "Khajuraho temple sunrise ancient architecture India",
+        "pexels_photo_id": 11397593,
+        "photographer": "tanmoy das",
+        "source_url": "https://images.pexels.com/photos/11397593/pexels-photo-11397593.png"
+      }
+    },
+    {
+      "technique": "AI Image (SD 1.5) + Ken Burns",
+      "status": "completed",
+      "total_time_s": 80.95611882209778,
+      "generation_time_s": 74.8374228477478,
+      "render_time_s": 6.118695974349976,
+      "peak_vram_gb": 4.27,
+      "peak_ram_gb": 0.0,
+      "output_file": "/Users/pravinmohite/Desktop/youtubePipeline/media_lab/output/ai_image_kb/ai_image_kb.mp4",
+      "output_resolution": "1080x1920",
+      "output_duration_s": 5.0,
+      "output_size_mb": 1.51,
+      "framerate": 25.0,
+      "error": "",
+      "notes": {
+        "gen_time_s": 53.02
+      }
+    },
+    {
+      "technique": "Hybrid: Pexels Video + AI Overlay",
+      "status": "completed",
+      "total_time_s": 96.26893329620361,
+      "generation_time_s": 83.751225233078,
+      "render_time_s": 12.51770806312561,
+      "peak_vram_gb": 0.0,
+      "peak_ram_gb": 0.0,
+      "output_file": "/Users/pravinmohite/Desktop/youtubePipeline/media_lab/output/hybrid/hybrid.mp4",
+      "output_resolution": "1080x1920",
+      "output_duration_s": 4.97,
+      "output_size_mb": 0.47,
+      "framerate": 30.0,
+      "error": "",
+      "notes": {
+        "overlay_generated": true
+      }
+    }
+  ]
+}

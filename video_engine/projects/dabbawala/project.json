@@ -1,0 +1,214 @@
+{
+  "title": "Dabbawalas: Mumbai's Unbroken Chain",
+  "description": "The story of Mumbai's dabbawalas — a 130-year-old lunchbox delivery system with six sigma precision, zero technology, and millions of daily transactions",
+  "profile": "natgeo",
+  "voice": "hi-IN-MadhurNeural",
+  "language": "hi",
+  "fps": 30,
+  "resolution": "1080x1920",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "title": "The Morning Rush",
+      "narration": "मुंबई की भीड़ में हर सुबह एक खामोश सेना निकलती है। यह डिब्बावालों की दुनिया है।",
+      "shots": [
+        {
+          "shot_id": "1-1",
+          "duration_seconds": 10.0,
+          "shot_type": "real",
+          "subject": "Mumbai morning commute",
+          "action": "crowds walking through busy streets and train stations",
+          "environment": "busy Mumbai street with local trains and people rushing",
+          "camera_movement": "dolly_in",
+          "camera_angle": "low_angle",
+          "lens": "wide_angle",
+          "time_of_day": "morning",
+          "weather": "clear",
+          "mood": "urgent",
+          "visual_effects": "none",
+          "motion_intensity": "dynamic",
+          "composition": "rule_of_thirds",
+          "depth_of_field": "deep",
+          "color_palette": "natural",
+          "focus_subject": "crowd moving with purpose",
+          "negative_prompt": "No empty streets, no night, no text",
+          "search_prompt": "Mumbai dabbawala busy street morning commute"
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "title": "The Lunchbox Army",
+      "narration": "हर दिन पाँच हज़ार से ज़्यादा डिब्बावाले घर से बना खाना दफ्तर तक पहुँचाते हैं। कोई तकनीक नहीं, फिर भी कोई गलती नहीं।",
+      "shots": [
+        {
+          "shot_id": "2-1",
+          "duration_seconds": 12.0,
+          "shot_type": "real",
+          "subject": "dabbawalas with stacked tiffin lunchboxes",
+          "action": "carrying and sorting dozens of lunchboxes",
+          "environment": "sorting area at a Mumbai train station platform",
+          "camera_movement": "pan_right",
+          "camera_angle": "eye_level",
+          "lens": "standard",
+          "time_of_day": "midday",
+          "weather": "clear",
+          "mood": "contemplative",
+          "visual_effects": "none",
+          "motion_intensity": "moderate",
+          "composition": "center",
+          "depth_of_field": "medium",
+          "color_palette": "vibrant",
+          "focus_subject": "tiffin boxes being stacked",
+          "negative_prompt": "No empty boxes, no text, no watermark",
+          "search_prompt": "bicycle delivery India lunchboxes stacking sorting"
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "title": "Born From Necessity",
+      "narration": "यह प्रणाली सन अठारह सौ नब्बे में शुरू हुई थी। तब से यह वैसी ही चल रही है, पीढ़ी दर पीढ़ी।",
+      "shots": [
+        {
+          "shot_id": "3-1",
+          "duration_seconds": 12.0,
+          "shot_type": "real",
+          "subject": "old Mumbai streets from the 1890s",
+          "action": "colonial era streets with horse carts and early trains",
+          "environment": "historic Mumbai street with heritage architecture",
+          "camera_movement": "static",
+          "camera_angle": "eye_level",
+          "lens": "standard",
+          "time_of_day": "afternoon",
+          "weather": "fog",
+          "mood": "contemplative",
+          "visual_effects": "film_grain",
+          "motion_intensity": "gentle",
+          "composition": "symmetry",
+          "depth_of_field": "deep",
+          "color_palette": "sepia",
+          "focus_subject": "old Mumbai street scene",
+          "negative_prompt": "No modern cars, no text, no people in modern clothes",
+          "search_prompt": "vintage Mumbai India street old 19th century heritage architecture"
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "title": "The Code Without Computers",
+      "narration": "हर डिब्बे पर रंग और अंकों का कोड होता है। यह बताता है कि डिब्बा कहाँ से आया और कहाँ जाना है। न ऐप, न जीपीएस।",
+      "shots": [
+        {
+          "shot_id": "4-1",
+          "duration_seconds": 15.0,
+          "shot_type": "real",
+          "subject": "close-up of coded markings on a tiffin box",
+          "action": "hand painting colored symbols and numbers on lunchbox lid",
+          "environment": "dabbawala workspace with dozens of tiffin boxes",
+          "camera_movement": "dolly_in",
+          "camera_angle": "high_angle",
+          "lens": "macro",
+          "time_of_day": "midday",
+          "weather": "clear",
+          "mood": "mysterious",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "composition": "framing",
+          "depth_of_field": "extremely_shallow",
+          "color_palette": "vibrant",
+          "focus_subject": "colored code markings on tiffin lid",
+          "negative_prompt": "No text overlay, no smartphone, no screen",
+          "search_prompt": "close up hands painting colored symbols metal tin box"
+        }
+      ]
+    },
+    {
+      "scene_id": 5,
+      "title": "The Relay Begins",
+      "narration": "एक डिब्बा चार अलग-अलग हाथों से गुज़रता है। ट्रेन, साइकिल और पैदल — सब मिलकर एक जाल बनाते हैं।",
+      "shots": [
+        {
+          "shot_id": "5-1",
+          "duration_seconds": 12.0,
+          "shot_type": "real",
+          "subject": "dabbawala cycling with tiffin boxes",
+          "action": "handing off boxes at a train station while cycling",
+          "environment": "Mumbai local train station platform",
+          "camera_movement": "tracking",
+          "camera_angle": "eye_level",
+          "lens": "wide_angle",
+          "time_of_day": "morning",
+          "weather": "clear",
+          "mood": "urgent",
+          "visual_effects": "none",
+          "motion_intensity": "dynamic",
+          "composition": "leading_lines",
+          "depth_of_field": "deep",
+          "color_palette": "natural",
+          "focus_subject": "bicycle with tiffin boxes at station",
+          "negative_prompt": "No empty bike, no text, no watermark",
+          "search_prompt": "bicycle delivery India lunchboxes dabbawala train station"
+        }
+      ]
+    },
+    {
+      "scene_id": 6,
+      "title": "Six Sigma Without Silicon",
+      "narration": "हार्वर्ड ने इसे सिक्स सिग्मा दर्जा दिया है। सोलह मिलियन डिब्बों में सिर्फ एक गलती होती है। किसी तकनीक कंपनी से भी बेहतर सटीकता।",
+      "shots": [
+        {
+          "shot_id": "6-1",
+          "duration_seconds": 15.0,
+          "shot_type": "real",
+          "subject": "dabbawalas sorting hub",
+          "action": "sorting and organizing hundreds of tiffin boxes efficiently",
+          "environment": "large sorting area with organized rows of tiffin boxes",
+          "camera_movement": "crane_up",
+          "camera_angle": "high_angle",
+          "lens": "wide_angle",
+          "time_of_day": "midday",
+          "weather": "clear",
+          "mood": "wonder",
+          "visual_effects": "none",
+          "motion_intensity": "moderate",
+          "composition": "rule_of_thirds",
+          "depth_of_field": "deep",
+          "color_palette": "vibrant",
+          "focus_subject": "organized rows of tiffin boxes being sorted",
+          "negative_prompt": "No confusion, no empty space, no text",
+          "search_prompt": "workers sorting organizing boxes delivery warehouse distribution"
+        }
+      ]
+    },
+    {
+      "scene_id": 7,
+      "title": "Trust as the Real Technology",
+      "narration": "यहाँ मशीन नहीं, भरोसा ही असली तकनीक है। सौ साल से यह भरोसा कभी नहीं टूटा।",
+      "shots": [
+        {
+          "shot_id": "7-1",
+          "duration_seconds": 12.0,
+          "shot_type": "real",
+          "subject": "dabbawala portrait",
+          "action": "smiling while carrying tiffin boxes in golden light",
+          "environment": "Mumbai street or station at sunset",
+          "camera_movement": "dolly_out",
+          "camera_angle": "eye_level",
+          "lens": "standard",
+          "time_of_day": "golden_hour",
+          "weather": "clear",
+          "mood": "wonder",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "composition": "rule_of_thirds",
+          "depth_of_field": "shallow",
+          "color_palette": "rich_warm",
+          "focus_subject": "dabbawala face and tiffin boxes",
+          "negative_prompt": "No crowd, no text, no watermark",
+          "search_prompt": "Mumbai dabbawala smiling portrait uniform carrying"
+        }
+      ]
+    }
+  ]
+}

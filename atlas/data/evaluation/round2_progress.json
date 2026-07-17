@@ -1,0 +1,436 @@
+[
+  {
+    "topic_id": "3f1dc263-30cc-40f3-9cb6-8946afd86369",
+    "topic_name": "Lonar Lake",
+    "entity_type": "lake",
+    "country": "India",
+    "research_time": 53.2,
+    "gen_time": 208.3,
+    "research_success": true,
+    "facts_count": 5,
+    "facts_ok": true,
+    "report": {
+      "id": "cf04a93e-f19b-4fce-9ce9-5010d1b67840",
+      "topic_id": "3f1dc263-30cc-40f3-9cb6-8946afd86369",
+      "script_type": "SHORTS_60",
+      "variant": "documentary",
+      "title": "लोनार झील की रहस्यमय यात्रा",
+      "hook": "क्या आपने कभी एक झील के बारे में सुना है जो एक ग्रह के अंदर बनी हुई है?",
+      "script_text": "लोनार झील, महाराष्ट्र के बुलढाणा जिले में 79 किमी दूर बुलढाणा में स्थित है। यह एक लवण और सोडा झील है। इसे लोनार क्रेटर के नाम से भी जाना जाता है। यह एक राष्ट्रीय भू-आविष्कार स्मारक के रूप में घोषित किया गया है। यहां तीर्थ स्थल और अंगूठी लिखे हुए हैं, जहां तीर्थ स्थलों के छत पर छवियां, मूर्तियां और अंगूठी बर्बाद हो गई हैं।",
+      "estimated_duration": 60,
+      "quality_score": 88.0,
+      "readability_score": 52.5,
+      "engagement_score": 23.0,
+      "repetition_score": 80.0,
+      "hallucination_score": 0.0,
+      "grounding_score": 100.0,
+      "story_score": 75.0,
+      "language_score": 97.9,
+      "validation_passed": true,
+      "validation_report": {
+        "fact_grounding": {
+          "is_valid": true,
+          "confidence": 100.0,
+          "hallucination_score": 0.0,
+          "grounding_score": 100.0,
+          "violations": [],
+          "supported_claims": 5,
+          "unsupported_claims": 0,
+          "total_claims_checked": 5
+        },
+        "location_accuracy": {
+          "is_valid": true,
+          "confidence": 100.0,
+          "violations": [],
+          "locations_found": [
+            "महाराष्ट्र"
+          ],
+          "locations_validated": 1,
+          "hallucinated_locations": []
+        },
+        "repetition_check": {
+          "is_valid": true,
+          "confidence": 100.0,
+          "violations": [],
+          "total_sentences": 5,
+          "duplicate_pairs": 0,
+          "max_similarity": 0.188
+        },
+        "language_check": {
+          "is_valid": true,
+          "confidence": 97.9,
+          "violations": [],
+          "hindi_ratio": 1.0,
+          "total_chars": 323,
+          "hindi_chars": 253,
+          "english_chars": 0,
+          "english_words_found": []
+        },
+        "story_structure": {
+          "is_valid": true,
+          "confidence": 75.0,
+          "violations": [
+            {
+              "element": "curiosity_ending",
+              "details": "Last sentence may not engage curiosity: 'यहां तीर्थ स्थल और अंगूठी लिखे हुए हैं, जहां तीर्थ स्थलों के'"
+            }
+          ],
+          "elements_found": {
+            "hook": true,
+            "context": true,
+            "fact_section": true,
+            "curiosity_ending": false
+          },
+          "structure_score": 75.0
+        }
+      },
+      "generation_attempts": 1,
+      "script_status": "completed",
+      "created_at": "2026-06-20T21:14:34.320345Z"
+    },
+    "variants": [
+      {
+        "variant": "documentary",
+        "title": "लोनार झील की रहस्यमय यात्रा",
+        "hook": "क्या आपने कभी एक झील के बारे में सुना है जो एक ग्रह के अंदर बनी हुई है?",
+        "script_text": "लोनार झील, महाराष्ट्र के बुलढाणा जिले में 79 किमी दूर बुलढाणा में स्थित है। यह एक लवण और सोडा झील है। इसे लोनार क्रेटर के नाम से भी जाना जाता है। यह एक राष्ट्रीय भू-आविष्कार स्मारक के रूप में घोषित किया गया है। यहां तीर्थ स्थल और अंगूठी लिखे हुए हैं, जहां तीर्थ स्थलों के छत पर छवियां, मूर्तियां और अंगूठी बर्बाद हो गई हैं।",
+        "estimated_duration": 60,
+        "quality_score": 88.0,
+        "readability_score": 52.5,
+        "engagement_score": 23.0,
+        "repetition_score": 80.0,
+        "hallucination_score": 0.0,
+        "grounding_score": 100.0,
+        "story_score": 75.0,
+        "language_score": 97.9,
+        "validation_passed": true,
+        "generation_attempts": 1,
+        "script_status": "completed"
+      },
+      {
+        "variant": "mystery",
+        "title": "Lonar Lake: एक रहस्यमय झील",
+        "hook": "एक रहस्यमय झील पर एक अजीब तारीख खोजे गए।",
+        "script_text": "79 किमी के दूर बुल्धाना के लोनार में एक खास झील है। यह लोनार क्रेटर भी कहलाती है। यह लवण और सोडियम झील है। यह राष्ट्रीय भू-आर्थिक स्मारक है। झील में तीर्थ और चित्र हैं। एक अजीब तारीख खोजे गए। यह क्यों है?",
+        "estimated_duration": 45,
+        "quality_score": 83.0,
+        "readability_score": 39.7,
+        "engagement_score": 47.0,
+        "repetition_score": 90.0,
+        "hallucination_score": 0.0,
+        "grounding_score": 100.0,
+        "story_score": 100.0,
+        "language_score": 96.8,
+        "validation_passed": true,
+        "generation_attempts": 1,
+        "script_status": "completed"
+      },
+      {
+        "variant": "travel",
+        "title": "लोनार झील की रोचक यात्रा",
+        "hook": "79 किमी की यात्रा के बाद, लोनार झील के रहस्य खोलें!",
+        "script_text": "लोनार झील, महाराष्ट्र के बुलढाणा जिले में 79 किमी दूर स्थित है। यह एक लवण और सोडियम झील है। लोनार क्रेटर के नाम से भी जाना जाता है। यह एक राष्ट्रीय भू-आविष्कार स्मारक है। यहां तीर्थ स्थल और अंकित चित्र हैं, जहां तीर्थ स्थलों के छत और मूर्तियां हैं। आपको लोनार झील के रहस्य के बारे में जानने के लिए आखिरी बार आकर आना होगा!",
+        "estimated_duration": 60,
+        "quality_score": 88.0,
+        "readability_score": 51.3,
+        "engagement_score": 36.0,
+        "repetition_score": 70.0,
+        "hallucination_score": 0.0,
+        "grounding_score": 100.0,
+        "story_score": 100.0,
+        "language_score": 97.7,
+        "validation_passed": true,
+        "generation_attempts": 1,
+        "script_status": "completed"
+      }
+    ]
+  },
+  {
+    "topic_id": "c30cffa9-d486-4067-9e91-253036922584",
+    "topic_name": "Hampi",
+    "entity_type": "historical_site",
+    "country": "India",
+    "research_time": 89.5,
+    "gen_time": 261.9,
+    "research_success": true,
+    "facts_count": 5,
+    "facts_ok": true,
+    "report": {
+      "id": "48f2af84-0f07-4b29-be9f-3fc205b81c06",
+      "topic_id": "c30cffa9-d486-4067-9e91-253036922584",
+      "script_type": "SHORTS_60",
+      "variant": "documentary",
+      "title": "हम्पी के रहस्य खोजें",
+      "hook": "क्या आप जानते हैं कि एक ऐसा स्थल है जहां रामायण के अंश जीवित हैं?",
+      "script_text": "हम्पी, कर्नाटक के हवरी जिले में एक विश्व धर्म स्थल है। रामायण और पुराणों में इसे पंपा देवी तीर्थ क्षेत्र के रूप में उल्लेखित किया गया है। विरुपाक्ष तीर्थ एक सक्रिय आदि शंकर लिंक्ड मठ है। यहां 27 अरब साल पुराने ग्रेनाइट बॉल्डर्स हैं। विजयनगर राजवंश के अनेक महल और मंदिर भी यहां हैं। आप जानते हैं कि यहां क्या होता है?",
+      "estimated_duration": 60,
+      "quality_score": 85.0,
+      "readability_score": 50.1,
+      "engagement_score": 46.0,
+      "repetition_score": 85.0,
+      "hallucination_score": 16.7,
+      "grounding_score": 83.3,
+      "story_score": 100.0,
+      "language_score": 99.3,
+      "validation_passed": true,
+      "validation_report": {
+        "fact_grounding": {
+          "is_valid": true,
+          "confidence": 75.0,
+          "hallucination_score": 16.7,
+          "grounding_score": 83.3,
+          "violations": [
+            {
+              "claim": "यहां 27 अरब साल पुराने ग्रेनाइट बॉल्डर्स हैं",
+              "severity": "high",
+              "details": "Unverified claim: numbers in script not found in source facts. numbers in script not found in facts"
+            }
+          ],
+          "supported_claims": 5,
+          "unsupported_claims": 1,
+          "total_claims_checked": 6
+        },
+        "location_accuracy": {
+          "is_valid": true,
+          "confidence": 100.0,
+          "violations": [],
+          "locations_found": [
+            "कर्नाटक"
+          ],
+          "locations_validated": 1,
+          "hallucinated_locations": []
+        },
+        "repetition_check": {
+          "is_valid": true,
+          "confidence": 100.0,
+          "violations": [],
+          "total_sentences": 6,
+          "duplicate_pairs": 0,
+          "max_similarity": 0.214
+        },
+        "language_check": {
+          "is_valid": true,
+          "confidence": 99.3,
+          "violations": [],
+          "hindi_ratio": 1.0,
+          "total_chars": 316,
+          "hindi_chars": 251,
+          "english_chars": 0,
+          "english_words_found": []
+        },
+        "story_structure": {
+          "is_valid": true,
+          "confidence": 100.0,
+          "violations": [],
+          "elements_found": {
+            "hook": true,
+            "context": true,
+            "fact_section": true,
+            "curiosity_ending": true
+          },
+          "structure_score": 100.0
+        }
+      },
+      "generation_attempts": 1,
+      "script_status": "completed",
+      "created_at": "2026-06-20T21:19:32.175723Z"
+    },
+    "variants": [
+      {
+        "variant": "documentary",
+        "title": "हम्पी के रहस्य खोजें",
+        "hook": "क्या आप जानते हैं कि एक ऐसा स्थल है जहां रामायण के अंश जीवित हैं?",
+        "script_text": "हम्पी, कर्नाटक के हवरी जिले में एक विश्व धर्म स्थल है। रामायण और पुराणों में इसे पंपा देवी तीर्थ क्षेत्र के रूप में उल्लेखित किया गया है। विरुपाक्ष तीर्थ एक सक्रिय आदि शंकर लिंक्ड मठ है। यहां 27 अरब साल पुराने ग्रेनाइट बॉल्डर्स हैं। विजयनगर राजवंश के अनेक महल और मंदिर भी यहां हैं। आप जानते हैं कि यहां क्या होता है?",
+        "estimated_duration": 60,
+        "quality_score": 85.0,
+        "readability_score": 50.1,
+        "engagement_score": 46.0,
+        "repetition_score": 85.0,
+        "hallucination_score": 16.7,
+        "grounding_score": 83.3,
+        "story_score": 100.0,
+        "language_score": 99.3,
+        "validation_passed": true,
+        "generation_attempts": 1,
+        "script_status": "completed"
+      },
+      {
+        "variant": "mystery",
+        "title": "हंपी के रहस्य खोजें",
+        "hook": "एक रहस्यमय शहर के बारे में जानें जहां देवी पंपा का तीर्थ क्षेत्र है।",
+        "script_text": "हंपी, विजयनगर जिला के एक ऐतिहासिक स्थल है। यह रामायण और पुराणों में देवी पंपा के तीर्थ क्षेत्र के रूप में जाना जाता है। यहां विरुपाक्ष देवी का एक सक्रिय आदि शंकर लिंक्ड मठ है। यहां बड़े बॉल्डर्स हैं जो 27 करोड़ वर्ष पुराने हैं। लॉटस महल और हजारा राम देवी के मंदिर भी हैं। आखिर यहां क्या छुपा है?",
+        "estimated_duration": 45,
+        "quality_score": 85.0,
+        "readability_score": 53.1,
+        "engagement_score": 39.0,
+        "repetition_score": 100.0,
+        "hallucination_score": 16.7,
+        "grounding_score": 83.3,
+        "story_score": 100.0,
+        "language_score": 98.3,
+        "validation_passed": true,
+        "generation_attempts": 1,
+        "script_status": "completed"
+      },
+      {
+        "variant": "travel",
+        "title": "हम्पी के रहस्य की यात्रा",
+        "hook": "एक ऐतिहासिक स्थल पर एक रहस्य छिपा हुआ है!",
+        "script_text": "हम्पी, विजयनगर जिला, कर्नाटक में एक विश्व धर्म स्थल है। यह रामायण और पुराणों में पंपा देवी तीर्थ क्षेत्र के रूप में जाना जाता है। विरुपाक्ष तीर्थ एक सक्रिय अदि शंकर विहार है। यहां लॉटस महल और हजारा राम तीर्थ के ऐतिहासिक इमारत हैं। बॉल्डर्स के रूप में 27 करोड़ वर्ष पुराने ग्रेनाइट के बड़े चट्टान हैं। आओ, इतिहास के रहस्य को खोजें!",
+        "estimated_duration": 60,
+        "quality_score": 85.0,
+        "readability_score": 44.8,
+        "engagement_score": 52.0,
+        "repetition_score": 85.0,
+        "hallucination_score": 16.7,
+        "grounding_score": 83.3,
+        "story_score": 100.0,
+        "language_score": 99.2,
+        "validation_passed": true,
+        "generation_attempts": 1,
+        "script_status": "completed"
+      }
+    ]
+  },
+  {
+    "topic_id": "e894c906-94b6-4b69-a73b-1030caaf18fd",
+    "topic_name": "Ajanta Caves",
+    "entity_type": "cave",
+    "country": "India",
+    "research_time": 87.4,
+    "gen_time": 301.4,
+    "research_success": true,
+    "facts_count": 9,
+    "facts_ok": true,
+    "report": {
+      "id": "c0042124-7e35-48f4-99a0-a47418d26431",
+      "topic_id": "e894c906-94b6-4b69-a73b-1030caaf18fd",
+      "script_type": "SHORTS_60",
+      "variant": "documentary",
+      "title": "अजंता गुफाएं क्या हैं?",
+      "hook": "क्या आप जानते हैं अजंता गुफाएं कहां हैं?",
+      "script_text": "अजंता गुफाएं महाराष्ट्र के अौरंगाबाद जिले में स्थित हैं। यह 30 गुफाएं हैं जो 2 वीं शताब्दी ईसा पूर्व से 480 ईसवी तक के बौद्ध धर्म के महत्वपूर्ण स्थल हैं। यह एक विश्व धर्म स्थल है। यहां पर चित्रकला और शिल्प कला के अद्वितीय उदाहरण हैं। यह बौद्ध धर्म के धर्मग्रंथों के अद्वितीय उदाहरण हैं। इन चित्रों में भाव गति, आसन और रूप के माध्यम से व्यक्त किया गया है। आप अब इन गुफाओं के रहस्य के बारे में और जानेंगे।",
+      "estimated_duration": 60,
+      "quality_score": 86.7,
+      "readability_score": 48.8,
+      "engagement_score": 38.0,
+      "repetition_score": 80.0,
+      "hallucination_score": 0.0,
+      "grounding_score": 100.0,
+      "story_score": 100.0,
+      "language_score": 98.0,
+      "validation_passed": true,
+      "validation_report": {
+        "fact_grounding": {
+          "is_valid": true,
+          "confidence": 100.0,
+          "hallucination_score": 0.0,
+          "grounding_score": 100.0,
+          "violations": [],
+          "supported_claims": 7,
+          "unsupported_claims": 0,
+          "total_claims_checked": 7
+        },
+        "location_accuracy": {
+          "is_valid": true,
+          "confidence": 100.0,
+          "violations": [],
+          "locations_found": [
+            "महाराष्ट्र"
+          ],
+          "locations_validated": 1,
+          "hallucinated_locations": []
+        },
+        "repetition_check": {
+          "is_valid": true,
+          "confidence": 100.0,
+          "violations": [],
+          "total_sentences": 7,
+          "duplicate_pairs": 0,
+          "max_similarity": 0.385
+        },
+        "language_check": {
+          "is_valid": true,
+          "confidence": 98.0,
+          "violations": [],
+          "hindi_ratio": 1.0,
+          "total_chars": 403,
+          "hindi_chars": 316,
+          "english_chars": 0,
+          "english_words_found": []
+        },
+        "story_structure": {
+          "is_valid": true,
+          "confidence": 100.0,
+          "violations": [],
+          "elements_found": {
+            "hook": true,
+            "context": true,
+            "fact_section": true,
+            "curiosity_ending": true
+          },
+          "structure_score": 100.0
+        }
+      },
+      "generation_attempts": 1,
+      "script_status": "completed",
+      "created_at": "2026-06-20T21:25:21.511429Z"
+    },
+    "variants": [
+      {
+        "variant": "documentary",
+        "title": "अजंता गुफाएं क्या हैं?",
+        "hook": "क्या आप जानते हैं अजंता गुफाएं कहां हैं?",
+        "script_text": "अजंता गुफाएं महाराष्ट्र के अौरंगाबाद जिले में स्थित हैं। यह 30 गुफाएं हैं जो 2 वीं शताब्दी ईसा पूर्व से 480 ईसवी तक के बौद्ध धर्म के महत्वपूर्ण स्थल हैं। यह एक विश्व धर्म स्थल है। यहां पर चित्रकला और शिल्प कला के अद्वितीय उदाहरण हैं। यह बौद्ध धर्म के धर्मग्रंथों के अद्वितीय उदाहरण हैं। इन चित्रों में भाव गति, आसन और रूप के माध्यम से व्यक्त किया गया है। आप अब इन गुफाओं के रहस्य के बारे में और जानेंगे।",
+        "estimated_duration": 60,
+        "quality_score": 86.7,
+        "readability_score": 48.8,
+        "engagement_score": 38.0,
+        "repetition_score": 80.0,
+        "hallucination_score": 0.0,
+        "grounding_score": 100.0,
+        "story_score": 100.0,
+        "language_score": 98.0,
+        "validation_passed": true,
+        "generation_attempts": 1,
+        "script_status": "completed"
+      },
+      {
+        "variant": "mystery",
+        "title": "अजंता गुफाओं में छिपा रहस्य",
+        "hook": "2000 साल पहले बने अजंता गुफाओं में एक रहस्य है जो अभी भी खोज रहे हैं!",
+        "script_text": "अजंता गुफाएं महाराष्ट्र के औरंगाबाद जिले में स्थित हैं। यह 30 गुफाएं हैं जो 2 वीं सदी ईसा पूर्व से 480 ईसवी तक बनी हैं। यह एक विश्व धर्म स्थल है। इनमें चित्रकला और चट्टान कटा स्थल शामिल हैं। इन चित्रों में भाव आंगी आंगी अभिव्यक्त किए गए हैं। क्या आप जानते हैं कि इन गुफाओं में कौन सा रहस्य छिपा है?",
+        "estimated_duration": 45,
+        "quality_score": 86.7,
+        "readability_score": 52.0,
+        "engagement_score": 57.0,
+        "repetition_score": 80.0,
+        "hallucination_score": 0.0,
+        "grounding_score": 100.0,
+        "story_score": 100.0,
+        "language_score": 96.5,
+        "validation_passed": true,
+        "generation_attempts": 1,
+        "script_status": "completed"
+      },
+      {
+        "variant": "travel",
+        "title": "अजंता गुफाएं: बौद्ध धर्म के महान कला नमूना",
+        "hook": "महाराष्ट्र में छुपे ऐतिहासिक रहस्य खोजें!",
+        "script_text": "अजंता गुफाएं अपने ऐतिहासिक रहस्यों के लिए प्रसिद्ध हैं। यह अवैध गुफाएं बौद्ध धर्म के आदर्श कला नमूना मानी जाती हैं। इन गुफाओं में चित्रकला और शिल्पकला के अद्भुत उदाहरण हैं। अजंता गुफाएं महाराष्ट्र के अउरंगाबाद जिले में स्थित हैं। यह 30 गुफाएं हैं जो 2 वीं शताब्दी ईसा पूर्व से 480 ईसा पूर्व तक बनाई गई हैं। यह एक विश्व धर्म स्थल है। यहां कला भावों को हाथ से बनाई गई है।",
+        "estimated_duration": 60,
+        "quality_score": 86.7,
+        "readability_score": 51.5,
+        "engagement_score": 42.0,
+        "repetition_score": 75.0,
+        "hallucination_score": 0.0,
+        "grounding_score": 100.0,
+        "story_score": 75.0,
+        "language_score": 98.6,
+        "validation_passed": true,
+        "generation_attempts": 1,
+        "script_status": "completed"
+      }
+    ]
+  }
+]

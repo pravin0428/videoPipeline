@@ -1,0 +1,156 @@
+{
+  "title": "The Lake That Fell From Space",
+  "description": "Lonar Lake — a meteorite impact crater in Maharashtra, one of Earth's rarest geological wonders",
+  "profile": "natgeo",
+  "voice": "hi-IN-SwaraNeural",
+  "language": "hi",
+  "fps": 30,
+  "resolution": "1080x1920",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "title": "The Hidden Wonder",
+      "narration": "महाराष्ट्र में एक ऐसी झील है जो किसी नदी, ज्वालामुखी या मानवीय हाथों से नहीं बनी। यह हजारों साल पहले पृथ्वी से टकराए एक विशाल उल्का से जन्मी है।",
+      "shots": [
+        {
+          "shot_id": "1-1",
+          "duration_seconds": 9.0,
+          "shot_type": "real",
+          "subject": "Lonar Lake",
+          "action": "morning mist slowly reveals the perfectly circular crater lake surrounded by dense green forest",
+          "environment": "massive basalt plateau in Maharashtra with untouched wilderness",
+          "camera_movement": "push_in",
+          "camera_angle": "aerial_view",
+          "lens": "wide_angle",
+          "time_of_day": "morning",
+          "weather": "mist",
+          "mood": "mysterious",
+          "composition": "center",
+          "depth_of_field": "deep",
+          "color_palette": "warm",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "focus_subject": "perfectly circular crater lake",
+          "negative_prompt": "No people, no buildings, no text, no watermark, no CGI artifacts, no blur",
+          "search_prompt": "Ultra realistic aerial drone shot of Lonar Lake in Maharashtra, morning mist over perfectly circular meteorite crater lake surrounded by dense green forest on basalt plateau, cinematic slow push-in, BBC Earth documentary style, golden sunrise, deep focus, warm natural colors, no people, 8K ultra detailed"
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "title": "The Cosmic Impact",
+      "narration": "लगभग पचास हज़ार साल पहले, एक विशाल उल्का अविश्वसनीय गति से पृथ्वी के वायुमंडल से गुज़री और इस प्राचीन भूमि से जा टकराई।",
+      "shots": [
+        {
+          "shot_id": "2-1",
+          "duration_seconds": 9.0,
+          "shot_type": "real",
+          "subject": "gigantic meteor",
+          "action": "meteor tearing across prehistoric sky striking Earth with enormous force",
+          "environment": "ancient Maharashtra landscape before human civilization",
+          "camera_movement": "orbit",
+          "camera_angle": "aerial_view",
+          "lens": "anamorphic",
+          "time_of_day": "sunset",
+          "weather": "clear",
+          "mood": "dramatic",
+          "composition": "center",
+          "depth_of_field": "deep",
+          "color_palette": "vibrant",
+          "visual_effects": "none",
+          "motion_intensity": "dynamic",
+          "focus_subject": "fiery meteor striking ancient landscape",
+          "negative_prompt": "No science fiction spaceship, no fantasy elements, no cartoon style, no text",
+          "search_prompt": "Cinematic photorealistic recreation of a giant meteor racing across prehistoric sky and striking ancient Maharashtra landscape, fiery orange trail against deep blue sunset sky, anamorphic wide angle, Hollywood quality scientific visualization, no CGI artifacts"
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "title": "Birth of the Crater",
+      "narration": "इस टक्कर ने लगभग दो किलोमीटर चौड़ा एक विशाल गड्ढा बना दिया, जिसने परिदृश्य को हमेशा के लिए बदल दिया।",
+      "shots": [
+        {
+          "shot_id": "3-1",
+          "duration_seconds": 9.0,
+          "shot_type": "real",
+          "subject": "newly formed impact crater",
+          "action": "dust clouds rising while molten rocks scatter outward creating the massive circular crater",
+          "environment": "ancient basalt plateau after meteor impact",
+          "camera_movement": "pull_out",
+          "camera_angle": "aerial_view",
+          "lens": "ultra_wide",
+          "time_of_day": "morning",
+          "weather": "overcast",
+          "mood": "epic",
+          "composition": "center",
+          "depth_of_field": "deep",
+          "color_palette": "rich_warm",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "focus_subject": "massive impact crater with dust and molten rock",
+          "negative_prompt": "No fantasy explosions, no unrealistic fireballs, no text",
+          "search_prompt": "Ultra realistic geological aerial view of massive meteor impact crater forming on ancient basalt plateau, glowing orange dust and molten rock scattering outward, dark basalt landscape, slow cinematic pull-back, dramatic atmospheric lighting, National Geographic documentary style"
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "title": "A Martian Window",
+      "narration": "आज दुनिया भर से वैज्ञानिक लोनार झील आते हैं क्योंकि इसकी अनोखी भूविज्ञान मंगल ग्रह पर पाए जाने वाले प्रभाव क्रेटरों से काफी मिलती-जुलती है।",
+      "shots": [
+        {
+          "shot_id": "4-1",
+          "duration_seconds": 9.0,
+          "shot_type": "real",
+          "subject": "scientists studying Lonar Lake",
+          "action": "researchers examining rock samples and photographing the crater collecting geological data",
+          "environment": "peaceful lakeside surrounded by lush forest",
+          "camera_movement": "steadicam",
+          "camera_angle": "eye_level",
+          "lens": "standard",
+          "time_of_day": "afternoon",
+          "weather": "clear",
+          "mood": "wonder",
+          "composition": "rule_of_thirds",
+          "depth_of_field": "medium",
+          "color_palette": "earthy",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "focus_subject": "scientists examining unique geological formations",
+          "negative_prompt": "No laboratory, no city, no crowds, no text",
+          "search_prompt": "National Geographic documentary shot of scientists studying rock samples beside Lonar Lake in Maharashtra, researchers examining volcanic basalt in peaceful forest setting, soft afternoon sunlight, earthy natural tones, smooth steadicam, eye level, no people close-ups, documentary style"
+        }
+      ]
+    },
+    {
+      "scene_id": 5,
+      "title": "A Gift From Space",
+      "narration": "लोनार झील एक खूबसूरत जगह से कहीं अधिक है। यह एक याद दिलाती है कि महाराष्ट्र के सबसे बड़े प्राकृतिक अजूबों में से एक अंतरिक्ष से आया है।",
+      "shots": [
+        {
+          "shot_id": "5-1",
+          "duration_seconds": 9.0,
+          "shot_type": "real",
+          "subject": "Lonar Lake aerial panorama",
+          "action": "camera slowly ascends revealing the entire perfectly circular crater surrounded by endless green forest as birds glide across the sky",
+          "environment": "Lonar Lake at sunset",
+          "camera_movement": "crane_up",
+          "camera_angle": "aerial_view",
+          "lens": "wide_angle",
+          "time_of_day": "dusk",
+          "weather": "clear",
+          "mood": "peaceful",
+          "composition": "leading_lines",
+          "depth_of_field": "deep",
+          "color_palette": "rich_warm",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "focus_subject": "complete circular crater lake surrounded by forest",
+          "negative_prompt": "No people, no buildings, no text, no watermark",
+          "search_prompt": "Breathtaking cinematic drone ascent revealing complete aerial view of perfectly circular Lonar Lake crater in Maharashtra, golden sunset light reflecting on water, rich green forest surrounding the ancient impact crater, birds gliding across sky, BBC Earth finale style, ultra wide angle, deep focus, warm golden tones"
+        }
+      ]
+    }
+  ]
+}

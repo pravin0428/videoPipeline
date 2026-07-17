@@ -1,0 +1,36 @@
+scene:
+  id: "khajuraho_sunrise_01"
+  title: "Khajuraho Temple at Sunrise"
+  description: >
+    A wide shot of the ancient Khajuraho temples at sunrise.
+    Golden morning light illuminates the intricate sandstone carvings.
+    Birds circle the tall spire against a warm orange-blue sky.
+    Light mist hovers at the base of the temple.
+    The camera slowly pans right, revealing the full temple facade.
+  duration_seconds: 5
+  resolution: "1080x1920"  # vertical for documentaries
+  fps: 30
+  cinematic_prompt: >
+    Cinematic wide shot of ancient Khajuraho temple at sunrise,
+    golden hour light on sandstone carvings, birds circling spire,
+    warm orange and blue sky, light mist at base, slow pan right,
+    National Geographic documentary quality, 4K, shallow depth of field
+  stock_search_queries:
+    pexels: "Khajuraho temple sunrise ancient architecture India"
+    pixabay: "ancient temple sunrise India architecture"
+  ai_image_prompt:
+    positive: >
+      Ancient Khajuraho temple at sunrise, golden light on intricate sandstone
+      carvings, tall shikhara spire, orange and blue sky, birds circling,
+      light mist, National Geographic photography, 4K, cinematic lighting,
+      shallow depth of field, wide angle lens
+    negative: >
+      blurry, low quality, distorted, ugly, deformed, watermark, text,
+      modern buildings, people, cars, electricity wires, oversaturated
+  i2v_prompt: >
+    Slow pan right across temple facade, golden sunlight flickers through
+    clouds, birds soar in circle around spire, mist drifts slowly at base
+  t2v_prompt: >
+    Cinematic drone shot of ancient Khajuraho temples at sunrise, golden
+    light on sandstone carvings, birds circling tall spire, mist at base,
+    slow camera pan, warm colors, National Geographic documentary style

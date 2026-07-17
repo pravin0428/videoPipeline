@@ -1,0 +1,156 @@
+{
+  "title": "The Waterfall That Flows Upward",
+  "description": "Naneghat's reverse waterfall in Maharashtra — where monsoon winds force falling water back into the sky",
+  "profile": "bbc_earth",
+  "voice": "hi-IN-MadhurNeural",
+  "language": "hi",
+  "fps": 30,
+  "resolution": "1080x1920",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "title": "The Skyward Fall",
+      "narration": "धरती पर सारे झरने नीचे गिरते हैं, पर महाराष्ट्र का यह झरना ऊपर बहता है।",
+      "shots": [
+        {
+          "shot_id": "1-1",
+          "duration_seconds": 8.0,
+          "shot_type": "real",
+          "subject": "Naneghat reverse waterfall",
+          "action": "massive waterfall being pushed upward by powerful monsoon winds rising dramatically against gravity",
+          "environment": "Western Ghats during monsoon with thick clouds surrounding mountain cliffs",
+          "camera_movement": "drone",
+          "camera_angle": "aerial_view",
+          "lens": "wide_angle",
+          "time_of_day": "morning",
+          "weather": "windy",
+          "mood": "mysterious",
+          "composition": "rule_of_thirds",
+          "depth_of_field": "deep",
+          "color_palette": "natural",
+          "visual_effects": "none",
+          "motion_intensity": "moderate",
+          "focus_subject": "waterfall rising upward against gravity",
+          "negative_prompt": "No tourists, no buildings, no text, no watermark",
+          "search_prompt": "Epic drone shot of massive monsoon waterfall in Western Ghats Maharashtra being pushed upward by strong winds, water rising against gravity, thick clouds around mountain cliffs, dramatic aerial reveal emerging from clouds, BBC Earth documentary style, misty green landscape, no people"
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "title": "Wind's Power",
+      "narration": "मानसून के दौरान, हवाएँ इतनी तेज़ हो जाती हैं कि वे गिरते हुए पानी को वापस हवा में उछाल देती हैं।",
+      "shots": [
+        {
+          "shot_id": "2-1",
+          "duration_seconds": 10.0,
+          "shot_type": "real",
+          "subject": "millions of water droplets blown upward",
+          "action": "waterfall bending backward as mist fills the valley",
+          "environment": "green cliffs covered with moss and multiple waterfalls in Western Ghats",
+          "camera_movement": "orbit",
+          "camera_angle": "aerial_view",
+          "lens": "anamorphic",
+          "time_of_day": "overcast",
+          "weather": "windy",
+          "mood": "dramatic",
+          "composition": "dynamic",
+          "depth_of_field": "deep",
+          "color_palette": "natural",
+          "visual_effects": "none",
+          "motion_intensity": "dynamic",
+          "focus_subject": "waterfall bending backward with wind-blown mist",
+          "negative_prompt": "No fantasy, no CGI look, no text",
+          "search_prompt": "National Geographic quality monsoon waterfall in Western Ghats, powerful wind forcing waterfall upward and bending backward, millions of water droplets and mist filling green valley, slow cinematic orbit around waterfall, cloud-filtered daylight, lush green cliffs, dramatic nature documentary style"
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "title": "Inside a Cloud",
+      "narration": "किनारे के पास खड़े होने पर ऐसा लगता है जैसे बादल के अंदर चल रहे हों, जहाँ बारिश, कोहरा और हवा हर तरफ से घेर लेते हैं।",
+      "shots": [
+        {
+          "shot_id": "3-1",
+          "duration_seconds": 12.0,
+          "shot_type": "real",
+          "subject": "lone explorer in yellow rain jacket at mountain viewpoint",
+          "action": "wind pushing rain and mist around while grass waves violently",
+          "environment": "rocky mountain edge overlooking deep valleys in Western Ghats",
+          "camera_movement": "push_in",
+          "camera_angle": "eye_level",
+          "lens": "standard",
+          "time_of_day": "overcast",
+          "weather": "windy",
+          "mood": "epic",
+          "composition": "rule_of_thirds",
+          "depth_of_field": "deep",
+          "color_palette": "natural",
+          "visual_effects": "none",
+          "motion_intensity": "dynamic",
+          "focus_subject": "person standing at misty mountain viewpoint",
+          "negative_prompt": "No crowd, no umbrellas, no city",
+          "search_prompt": "BBC Earth documentary scene of lone explorer in yellow rain jacket standing on rocky mountain cliff in Western Ghats monsoon, powerful wind blowing rain and mist across viewpoint, dramatic cloud-filled valley, slow cinematic push-in, adventure mood, cloudy daylight, no crowds"
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "title": "Geography of Wonder",
+      "narration": "यह लुभावना भ्रम पश्चिमी घाट की अनोखी भौगोलिक स्थिति और तेज़ मौसमी हवाओं के कारण होता है।",
+      "shots": [
+        {
+          "shot_id": "4-1",
+          "duration_seconds": 10.0,
+          "shot_type": "real",
+          "subject": "wide aerial view of Western Ghats mountains",
+          "action": "clouds moving rapidly across cliffs while waterfall continues flowing upward",
+          "environment": "lush green Western Ghats landscape",
+          "camera_movement": "orbit",
+          "camera_angle": "aerial_view",
+          "lens": "wide_angle",
+          "time_of_day": "golden_hour",
+          "weather": "cloudy",
+          "mood": "epic",
+          "composition": "leading_lines",
+          "depth_of_field": "deep",
+          "color_palette": "rich_warm",
+          "visual_effects": "none",
+          "motion_intensity": "moderate",
+          "focus_subject": "mountains with clouds and reverse waterfall",
+          "negative_prompt": "No haze, no modern structures",
+          "search_prompt": "Breathtaking high altitude drone orbit showing lush green Western Ghats mountains and valleys during monsoon, golden light breaking through clouds over reverse waterfall, clouds racing across cliffs, National Geographic documentary style, epic landscape cinematography"
+        }
+      ]
+    },
+    {
+      "scene_id": 5,
+      "title": "Gravity Defied",
+      "narration": "प्रकृति हमें हैरान करती रहती है। महाराष्ट्र का यह झरना गुरुत्वाकर्षण को चुनौती देता है।",
+      "shots": [
+        {
+          "shot_id": "5-1",
+          "duration_seconds": 10.0,
+          "shot_type": "real",
+          "subject": "entire mountain landscape with reverse waterfall",
+          "action": "camera slowly rising above clouds revealing endless green valleys",
+          "environment": "Western Ghats during sunset after rainfall",
+          "camera_movement": "drone",
+          "camera_angle": "aerial_view",
+          "lens": "wide_angle",
+          "time_of_day": "sunset",
+          "weather": "clear",
+          "mood": "peaceful",
+          "composition": "leading_lines",
+          "depth_of_field": "deep",
+          "color_palette": "rich_warm",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "focus_subject": "vast mountain landscape with reverse waterfall at sunset",
+          "negative_prompt": "No text, watermark, buildings or tourists",
+          "search_prompt": "Breathtaking cinematic sunset drone ascent above Western Ghats revealing endless green valleys and mountains after monsoon rain, golden light illuminating landscape, reverse waterfall visible in distance, clouds parting below, BBC Earth finale style, peaceful inspiring mood, ultra wide angle"
+        }
+      ]
+    }
+  ]
+}

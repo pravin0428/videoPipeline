@@ -1,0 +1,243 @@
+{
+  "title": "Ajanta & Ellora — Temples Carved from a Single Rock",
+  "description": "The ancient rock-cut cave temples of Ajanta and Ellora — carved by hand, one chisel stroke at a time",
+  "profile": "natgeo",
+  "voice": "hi-IN-MadhurNeural",
+  "language": "hi",
+  "fps": 30,
+  "resolution": "1080x1920",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "title": "Hook - Not Built, Carved",
+      "narration": "सोचो, ये पूरा मंदिर बना नहीं, बल्कि एक ही पत्थर से तराशा गया है।",
+      "shots": [
+        {
+          "shot_id": "1-1",
+          "duration_seconds": 8.0,
+          "shot_type": "real",
+          "subject": "Ellora caves aerial view",
+          "action": "drone zooming into the cave complex",
+          "environment": "Ellora cave complex at golden hour",
+          "camera_movement": "dolly_in",
+          "camera_angle": "aerial_view",
+          "lens": "wide_angle",
+          "time_of_day": "golden_hour",
+          "weather": "clear",
+          "mood": "mysterious",
+          "visual_effects": "none",
+          "motion_intensity": "dynamic",
+          "composition": "rule_of_thirds",
+          "depth_of_field": "deep",
+          "color_palette": "rich_warm",
+          "focus_subject": "massive cave complex carved into cliff face",
+          "negative_prompt": "No modern buildings, no tourists, no text",
+          "search_prompt": "drone shot zooming ellora caves aerial dramatic"
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "title": "The Kailasa Temple",
+      "narration": "ये है एलोरा का कैलाश मंदिर, और मज़ेदार बात — यहाँ कोई ईंट नहीं लगी, कुछ जोड़ा नहीं गया।",
+      "shots": [
+        {
+          "shot_id": "2-1",
+          "duration_seconds": 10.0,
+          "shot_type": "real",
+          "subject": "Kailasa Temple at Ellora",
+          "action": "wide shot revealing the entire temple structure carved from rock",
+          "environment": "Ellora cave complex, Kailasa temple courtyard",
+          "camera_movement": "pan_right",
+          "camera_angle": "wide",
+          "lens": "wide_angle",
+          "time_of_day": "midday",
+          "weather": "clear",
+          "mood": "awe",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "composition": "symmetry",
+          "depth_of_field": "deep",
+          "color_palette": "natural",
+          "focus_subject": "massive monolithic temple carved from single rock",
+          "negative_prompt": "No text, no watermark, no modern structures",
+          "search_prompt": "kailasa temple ellora wide shot ancient architecture"
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "title": "Carved From the Top Down",
+      "narration": "कारीगरों ने पहाड़ की चोटी से शुरू किया और नीचे की तरफ तराशते गए, और सुनके हैरान हो जाओगे — उन्होंने दो लाख टन पत्थर सिर्फ़ हथौड़े और छेनी से हटाया।",
+      "shots": [
+        {
+          "shot_id": "3-1",
+          "duration_seconds": 15.0,
+          "shot_type": "real",
+          "subject": "carved pillars and sculptures inside Ellora caves",
+          "action": "detailed carving work on stone pillars and ceilings",
+          "environment": "interior of Ellora caves with ornate stone pillars",
+          "camera_movement": "tilt_up",
+          "camera_angle": "low_angle",
+          "lens": "macro",
+          "time_of_day": "midday",
+          "weather": "clear",
+          "mood": "wonder",
+          "visual_effects": "none",
+          "motion_intensity": "moderate",
+          "composition": "leading_lines",
+          "depth_of_field": "medium",
+          "color_palette": "natural",
+          "focus_subject": "intricate stone carvings and pillars",
+          "negative_prompt": "No people, no modern lighting, no text",
+          "search_prompt": "ellora caves carved pillars sculptures closeup ancient"
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "title": "No Room for Error",
+      "narration": "यहाँ कोई मशीन नहीं थी, गलती की गुंजाइश ही नहीं थी — एक गलत वार और सदियों की मेहनत बर्बाद हो सकती थी।",
+      "shots": [
+        {
+          "shot_id": "4-1",
+          "duration_seconds": 12.0,
+          "shot_type": "real",
+          "subject": "hammer and chisel carving stone",
+          "action": "close-up of stone being carved with traditional tools",
+          "environment": "ancient stone carving workshop or cave interior",
+          "camera_movement": "static",
+          "camera_angle": "macro",
+          "lens": "macro",
+          "time_of_day": "midday",
+          "weather": "clear",
+          "mood": "tense",
+          "visual_effects": "none",
+          "motion_intensity": "moderate",
+          "composition": "center",
+          "depth_of_field": "extremely_shallow",
+          "color_palette": "natural",
+          "focus_subject": "chisel striking stone",
+          "negative_prompt": "No digital tools, no text, no modern elements",
+          "search_prompt": "stone carving hammer chisel ancient closeup dramatic"
+        }
+      ]
+    },
+    {
+      "scene_id": 5,
+      "title": "The Ajanta Caves",
+      "narration": "यहाँ से कुछ किलोमीटर दूर, अजंता की गुफाओं में दो हज़ार साल पुरानी पेंटिंग्स छुपी हैं।",
+      "shots": [
+        {
+          "shot_id": "5-1",
+          "duration_seconds": 12.0,
+          "shot_type": "real",
+          "subject": "Ajanta cave interiors with ancient paintings",
+          "action": "slow reveal of painted walls and ceilings inside the cave",
+          "environment": "interior of Ajanta caves with murals on walls",
+          "camera_movement": "slow_pan",
+          "camera_angle": "eye_level",
+          "lens": "wide_angle",
+          "time_of_day": "midday",
+          "weather": "clear",
+          "mood": "sacred",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "composition": "rule_of_thirds",
+          "depth_of_field": "medium",
+          "color_palette": "vibrant",
+          "focus_subject": "ancient murals and paintings on cave walls",
+          "negative_prompt": "No flash photography, no tourists, no text",
+          "search_prompt": "ajanta caves interior ancient paintings"
+        }
+      ]
+    },
+    {
+      "scene_id": 6,
+      "title": "Painted in Darkness",
+      "narration": "सोचो, वो अंधेरी गुफाओं में तेल के दीयों की रोशनी से पेंटिंग बनाते थे, और वो कहानियाँ आज भी वैसी ही ज़िंदा हैं।",
+      "shots": [
+        {
+          "shot_id": "6-1",
+          "duration_seconds": 12.0,
+          "shot_type": "real",
+          "subject": "Ajanta cave painting details",
+          "action": "extreme close-up of ancient faded paintings on cave wall",
+          "environment": "dimly lit Ajanta cave interior with torch-like lighting",
+          "camera_movement": "push_in",
+          "camera_angle": "macro",
+          "lens": "macro",
+          "time_of_day": "night",
+          "weather": "clear",
+          "mood": "mysterious",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "composition": "center",
+          "depth_of_field": "extremely_shallow",
+          "color_palette": "warm",
+          "focus_subject": "ancient painting details on stone wall",
+          "negative_prompt": "No bright light, no text overlay, no modern elements",
+          "search_prompt": "ajanta caves paintings dim lighting closeup detail"
+        }
+      ]
+    },
+    {
+      "scene_id": 7,
+      "title": "Punch Line - Human Patience",
+      "narration": "न मशीन, न बिजली, न नक्शा — बस धैर्य ने पत्थर पर ये कहानी उकेरी।",
+      "shots": [
+        {
+          "shot_id": "7-1",
+          "duration_seconds": 10.0,
+          "shot_type": "real",
+          "subject": "Ellora caves aerial view",
+          "action": "dramatic slow zoom out revealing the full cave complex",
+          "environment": "Ellora cave complex at golden hour from above",
+          "camera_movement": "dolly_out",
+          "camera_angle": "aerial_view",
+          "lens": "wide_angle",
+          "time_of_day": "golden_hour",
+          "weather": "clear",
+          "mood": "epic",
+          "visual_effects": "none",
+          "motion_intensity": "moderate",
+          "composition": "rule_of_thirds",
+          "depth_of_field": "deep",
+          "color_palette": "rich_warm",
+          "focus_subject": "entire cave complex carved into mountainside",
+          "negative_prompt": "No modern buildings, no text, no tourists",
+          "search_prompt": "ellora caves complex aerial zoom out dramatic"
+        }
+      ]
+    },
+    {
+      "scene_id": 8,
+      "title": "Call to Action",
+      "narration": "ये इतिहास स्कूल में कभी नहीं पढ़ाया गया। ऐसे और राज़ों के लिए फॉलो करना।",
+      "shots": [
+        {
+          "shot_id": "8-1",
+          "duration_seconds": 10.0,
+          "shot_type": "real",
+          "subject": "Ajanta Ellora caves at sunset",
+          "action": "slow dolly in toward the cave entrance in golden light",
+          "environment": "cave complex exterior at sunset with warm golden light",
+          "camera_movement": "dolly_in",
+          "camera_angle": "wide",
+          "lens": "wide_angle",
+          "time_of_day": "golden_hour",
+          "weather": "clear",
+          "mood": "hopeful",
+          "visual_effects": "none",
+          "motion_intensity": "gentle",
+          "composition": "rule_of_thirds",
+          "depth_of_field": "deep",
+          "color_palette": "rich_warm",
+          "focus_subject": "cave entrance lit by golden sunset light",
+          "negative_prompt": "No text, no watermark, no modern elements",
+          "search_prompt": "ajanta ellora caves sunset golden hour wide shot"
+        }
+      ]
+    }
+  ]
+}
