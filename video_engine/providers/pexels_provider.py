@@ -147,22 +147,36 @@ class PexelsProvider(BaseProvider):
             if not videos:
                 return None
 
-            best = None
+            # Pick the SMALLEST file that still covers the target resolution.
+            # Grabbing the largest HD variant means huge downloads + slow re-encodes
+            # (painful on low-CPU hosts); a file at/just above target is plenty.
+            target_w, target_h = self._target_dims()
+            adequate: list[dict] = []
+            fallback: list[dict] = []
             for v in videos:
+                dur = v.get("duration", 0)
+                if dur < target_duration * 0.8:
+                    continue
                 for vf in v.get("video_files", []):
                     w, h = vf.get("width") or 0, vf.get("height") or 0
-                    dur = v.get("duration", 0)
-                    score = 0
-                    if dur >= target_duration * 0.8:
-                        score = w * h
-                        if w > 0 and h > 0:
-                            aspect = w / h
-                            if 0.56 <= aspect <= 0.6:
-                                score *= 1.5
-                    if best is None or score > best["score"]:
-                        best = {"file": vf, "area": w * h, "score": score, "duration": dur}
+                    if w <= 0 or h <= 0:
+                        continue
+                    portrait = 0.5 <= (w / h) <= 0.65
+                    entry = {"file": vf, "area": w * h, "duration": dur, "portrait": portrait}
+                    if w >= target_w * 0.9 and h >= target_h * 0.9:
+                        adequate.append(entry)
+                    else:
+                        fallback.append(entry)
 
-            if best is None or best.get("file") is None:
+            if adequate:
+                # smallest file that covers the target, preferring portrait aspect
+                adequate.sort(key=lambda e: (not e["portrait"], e["area"]))
+                best = adequate[0]
+            elif fallback:
+                # nothing big enough — take the largest available
+                fallback.sort(key=lambda e: (not e["portrait"], -e["area"]))
+                best = fallback[0]
+            else:
                 return None
 
             dl_resp = requests.get(best["file"]["link"], timeout=60)
@@ -182,9 +196,9 @@ class PexelsProvider(BaseProvider):
                 "-t", str(trim_duration),
                 "-vf", scale_filter,
                 "-c:v", "libx264", "-pix_fmt", "yuv420p",
-                "-preset", "medium", "-crf", "18",
+                "-preset", "ultrafast", "-crf", "23",
                 trimmed_path,
-            ], capture_output=True, timeout=120)
+            ], capture_output=True, timeout=180)
             if os.path.exists(trimmed_path) and os.path.getsize(trimmed_path) > 1000:
                 os.replace(trimmed_path, output_path)
 
