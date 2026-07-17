@@ -51,6 +51,51 @@ STAGES = [
 
 app = FastAPI(title="Video Engine Frontend")
 
+
+def _shot_enum_fields() -> dict[str, set]:
+    """Map each enum-typed Shot field -> its set of valid string values.
+
+    Built by introspecting the Shot dataclass so it stays in sync with models.py.
+    """
+    from enum import Enum
+    from typing import get_type_hints
+    from dataclasses import fields
+    from video_engine.models import Shot
+
+    hints = get_type_hints(Shot)
+    out: dict[str, set] = {}
+    for f in fields(Shot):
+        t = hints.get(f.name, f.type)
+        if isinstance(t, type) and issubclass(t, Enum):
+            out[f.name] = {e.value for e in t}
+    return out
+
+
+def _sanitize(data: dict) -> list[str]:
+    """Drop invalid enum values from shots so the engine's defaults apply.
+
+    Returns human-readable warnings for anything that was corrected, instead of
+    letting a single bad value fail the whole pipeline.
+    """
+    valid = _shot_enum_fields()
+    warnings: list[str] = []
+    for scene in data.get("scenes", []):
+        if not isinstance(scene, dict):
+            continue
+        sid = scene.get("scene_id", "?")
+        for shot in scene.get("shots", []):
+            if not isinstance(shot, dict):
+                continue
+            shid = shot.get("shot_id", "?")
+            for field_name, allowed in valid.items():
+                if field_name in shot and shot[field_name] not in allowed:
+                    warnings.append(
+                        f"scene {sid} shot {shid}: '{shot[field_name]}' is not a valid "
+                        f"{field_name} — using the default instead."
+                    )
+                    del shot[field_name]  # dropped -> dataclass default kicks in
+    return warnings
+
 # In-memory job store. Fine for a single-machine local tool.
 _jobs: dict[str, dict] = {}
 _jobs_lock = threading.Lock()
@@ -151,6 +196,9 @@ def generate(req: GenerateRequest):
     if "title" not in data or "scenes" not in data:
         raise HTTPException(status_code=400, detail="Project JSON must contain 'title' and 'scenes'.")
 
+    # Correct invalid enum values instead of failing the whole run.
+    warnings = _sanitize(data)
+
     job_id = uuid.uuid4().hex[:12]
     job_dir = JOBS_ROOT / job_id
     job_dir.mkdir(parents=True, exist_ok=True)
@@ -160,10 +208,11 @@ def generate(req: GenerateRequest):
     project_path = job_dir / "project.json"
     project_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    seed_logs = [f"⚠ {w}\n" for w in warnings]
     with _jobs_lock:
         _jobs[job_id] = {
             "status": "queued",
-            "logs": [],
+            "logs": seed_logs,
             "stage_num": 0,
             "total_stages": len(STAGES),
             "output": None,

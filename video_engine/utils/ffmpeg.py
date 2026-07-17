@@ -101,12 +101,29 @@ def mux_audio_subtitles(
     output_path: str,
     volume_gain: float = 6.0,
 ) -> bool:
-    """Mux video + audio + subtitles into final MP4."""
+    """Mux video + audio + subtitles into final MP4.
+
+    If the narration audio is longer than the video, the last frame is held
+    (padded) so the full narration plays out instead of being clipped by
+    ``-shortest``. Otherwise the video is stream-copied for speed.
+    """
     try:
+        vdur = get_duration(video_path)
+        adur = get_duration(audio_path)
+        # Video shorter than audio -> hold the last frame so nothing is cut off.
+        if adur > 0 and vdur > 0 and adur > vdur + 0.05:
+            pad = round(adur - vdur + 0.1, 2)
+            video_args = [
+                "-vf", f"tpad=stop_mode=clone:stop_duration={pad}",
+                "-c:v", "libx264", "-pix_fmt", "yuv420p", "-preset", "veryfast", "-crf", "18",
+            ]
+        else:
+            video_args = ["-c:v", "copy"]
+
         result = subprocess.run([
             "ffmpeg", "-y",
             "-i", video_path, "-i", audio_path, "-i", subtitle_path,
-            "-c:v", "copy",
+            *video_args,
             "-c:a", "aac", "-b:a", "192k",
             "-c:s", "mov_text",
             "-metadata:s:s:0", "language=hin",

@@ -66,6 +66,27 @@ async def step_generate_tts(project, tts_dir: str):
     return await generate_all_tts(project, tts_dir)
 
 
+def fit_durations_to_narration(project, tail: float = 0.4, min_shot: float = 2.0):
+    """Stretch each scene's shots so the footage covers its narration.
+
+    Video length per shot is otherwise fixed at ``duration_seconds`` regardless of
+    how long the spoken narration is. When narration is longer than the footage,
+    the concatenated audio outlasts the video and the final mux (``-shortest``)
+    clips the tail — cutting off the last words. Narration is the master clock for
+    a documentary, so after TTS we size each scene's footage to its measured
+    narration length (plus a small tail of silence).
+    """
+    for scene in project.scenes:
+        if not scene.shots or scene.tts_duration <= 0:
+            continue
+        n = len(scene.shots)
+        target = max(scene.tts_duration + tail, n * min_shot)
+        per = round(target / n, 2)
+        for shot in scene.shots:
+            shot.duration_seconds = per
+    return project
+
+
 def step_generate_videos(project, shots_dir: str, api_key: str):
     from video_engine.video_generator import generate_all_shots
     return generate_all_shots(project, shots_dir, api_key=api_key)
@@ -134,6 +155,8 @@ async def run_pipeline(arg: str):
     LOG.step(4, total_steps, "Generate TTS")
     tts_dir = os.path.join(project.output_path, "tts")
     tts_paths = await step_generate_tts(project, tts_dir)
+    # Size footage to the measured narration so nothing gets cut off at the end.
+    project = fit_durations_to_narration(project)
     stage_timings.append(("TTS", time.time() - t0))
 
     # Step 5: Generate Videos
