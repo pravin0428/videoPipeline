@@ -5,7 +5,8 @@ services:
     name: video-engine
     runtime: docker
     dockerfilePath: ./Dockerfile
-    plan: starter          # 512MB free tier can OOM on 1080x1920 renders; starter is safer
+    plan: free             # free = no card needed, but 512MB/0.1CPU can OOM on 1080x1920 renders.
+                           # Upgrade to `starter` (paid) in the dashboard if renders fail.
     healthCheckPath: /
     autoDeploy: true
     envVars:
