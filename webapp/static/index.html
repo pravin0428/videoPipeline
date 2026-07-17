@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Video Engine</title>
+<style>
+  :root {
+    --bg: #0e1116;
+    --panel: #161b22;
+    --panel-2: #1c2330;
+    --border: #2a3240;
+    --text: #e6edf3;
+    --muted: #8b98a9;
+    --accent: #4f8cff;
+    --accent-2: #3b6fd6;
+    --ok: #2ea043;
+    --err: #f85149;
+    --warn: #d29922;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  header {
+    padding: 22px 28px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  header h1 { font-size: 18px; margin: 0; font-weight: 600; }
+  header .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  header .tag { margin-left: auto; font-size: 12px; color: var(--muted); }
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 24px 28px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 900px) { .wrap { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .card h2 { font-size: 14px; margin: 0 0 12px; font-weight: 600; }
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  textarea {
+    width: 100%;
+    min-height: 420px;
+    resize: vertical;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+    font-size: 12.5px;
+    line-height: 1.5;
+    tab-size: 2;
+  }
+  textarea:focus { outline: none; border-color: var(--accent); }
+  button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .15s;
+  }
+  button:hover { background: var(--accent-2); }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  button.ghost {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+  button.ghost:hover { background: var(--panel-2); color: var(--text); }
+  .hint { font-size: 12px; color: var(--muted); margin-top: 10px; }
+  .banner {
+    font-size: 12.5px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    display: none;
+  }
+  .banner.warn { background: rgba(210,153,34,.12); border: 1px solid rgba(210,153,34,.4); color: var(--warn); display: block; }
+  .banner.err  { background: rgba(248,81,73,.12);  border: 1px solid rgba(248,81,73,.4);  color: var(--err);  display: block; }
+
+  .progress-track {
+    height: 8px; background: var(--panel-2); border-radius: 6px; overflow: hidden; margin: 6px 0 4px;
+  }
+  .progress-bar {
+    height: 100%; width: 0%; background: linear-gradient(90deg, var(--accent), #7aa8ff);
+    transition: width .4s ease;
+  }
+  .stage-label { font-size: 13px; color: var(--text); }
+  .stage-sub { font-size: 12px; color: var(--muted); }
+  .steps { list-style: none; padding: 0; margin: 14px 0 0; }
+  .steps li { font-size: 12.5px; color: var(--muted); padding: 4px 0; display: flex; gap: 8px; align-items: center; }
+  .steps li .ic { width: 16px; text-align: center; }
+  .steps li.active { color: var(--text); font-weight: 600; }
+  .steps li.done { color: var(--ok); }
+
+  pre.log {
+    background: #0a0d12;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 11.5px;
+    font-family: "SF Mono", ui-monospace, Menlo, monospace;
+    color: #c7d0da;
+    max-height: 220px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 14px 0 0;
+    display: none;
+  }
+  video { width: 100%; border-radius: 8px; background: #000; margin-top: 8px; display: none; max-height: 60vh; }
+  .result-actions { margin-top: 14px; display: none; gap: 10px; }
+  .placeholder { color: var(--muted); font-size: 13px; padding: 30px 0; text-align: center; }
+  a.dl {
+    background: var(--ok); color: white; text-decoration: none; border-radius: 8px;
+    padding: 10px 16px; font-size: 13px; font-weight: 600; display: inline-block;
+  }
+  a.dl:hover { filter: brightness(1.1); }
+</style>
+</head>
+<body>
+<header>
+  <span class="dot"></span>
+  <h1>Video Engine</h1>
+  <span class="tag">script → narrated documentary video</span>
+</header>
+
+<div class="wrap">
+  <!-- LEFT: input -->
+  <section class="card">
+    <h2>Structured project input (JSON)</h2>
+    <div id="keyBanner" class="banner warn">
+      ⚠ No <code>PEXELS_API_KEY</code> found — footage will fall back to generated text scenes.
+    </div>
+    <div id="errBanner" class="banner err"></div>
+    <textarea id="input" spellcheck="false" placeholder='Paste your project JSON here…'></textarea>
+    <div class="row" style="margin-top:12px;">
+      <button id="generateBtn">Generate video</button>
+      <button id="exampleBtn" class="ghost">Load example</button>
+      <button id="clearBtn" class="ghost">Clear</button>
+    </div>
+    <p class="hint">Must be a JSON object with <b>title</b> and <b>scenes</b> (each scene has <b>narration</b> + <b>shots</b>). Output is a vertical 1080×1920 MP4.</p>
+  </section>
+
+  <!-- RIGHT: output -->
+  <section class="card">
+    <h2>Result</h2>
+    <div id="idle" class="placeholder">Paste a project and click <b>Generate video</b>.</div>
+
+    <div id="progress" style="display:none;">
+      <div class="stage-label" id="stageLabel">Starting…</div>
+      <div class="progress-track"><div class="progress-bar" id="bar"></div></div>
+      <div class="stage-sub" id="stageSub"></div>
+      <ul class="steps" id="steps"></ul>
+    </div>
+
+    <pre class="log" id="log"></pre>
+
+    <video id="player" controls playsinline></video>
+    <div class="result-actions" id="actions">
+      <a class="dl" id="downloadLink" href="#" download>⬇ Download MP4</a>
+      <button class="ghost" id="againBtn">Generate another</button>
+    </div>
+  </section>
+</div>
+
+<script>
+const STAGES = [
+  "Load Project", "Continuity Fill", "Format Prompts",
+  "Generate TTS", "Generate Videos", "Generate Subtitles", "Render Final Video"
+];
+
+const $ = (id) => document.getElementById(id);
+let pollTimer = null;
+
+async function loadConfig() {
+  try {
+    const r = await fetch("/api/config");
+    const c = await r.json();
+    if (!c.pexels_key) $("keyBanner").style.display = "block";
+  } catch (_) {}
+}
+
+function renderSteps(current, status) {
+  const ul = $("steps");
+  ul.innerHTML = "";
+  STAGES.forEach((name, i) => {
+    const n = i + 1;
+    const li = document.createElement("li");
+    let ic = "○";
+    if (n < current || (status === "done")) { li.className = "done"; ic = "✓"; }
+    else if (n === current && status === "running") { li.className = "active"; ic = "▸"; }
+    li.innerHTML = `<span class="ic">${ic}</span>${name}`;
+    ul.appendChild(li);
+  });
+}
+
+function setError(msg) {
+  const b = $("errBanner");
+  b.textContent = "✗ " + msg;
+  b.className = "banner err";
+}
+function clearError() { $("errBanner").className = "banner"; $("errBanner").textContent = ""; }
+
+async function generate() {
+  clearError();
+  const text = $("input").value.trim();
+  if (!text) { setError("Please paste a project JSON first."); return; }
+  try { JSON.parse(text); }
+  catch (e) { setError("Invalid JSON: " + e.message); return; }
+
+  $("generateBtn").disabled = true;
+  $("idle").style.display = "none";
+  $("player").style.display = "none";
+  $("actions").style.display = "none";
+  $("progress").style.display = "block";
+  $("log").style.display = "block";
+  $("log").textContent = "";
+  $("bar").style.width = "0%";
+  $("stageLabel").textContent = "Queued…";
+  renderSteps(0, "queued");
+
+  let res, data;
+  try {
+    res = await fetch("/api/generate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ project: text }),
+    });
+    data = await res.json();
+  } catch (e) {
+    setError("Request failed: " + e.message);
+    $("generateBtn").disabled = false;
+    return;
+  }
+  if (!res.ok) {
+    setError(data.detail || "Failed to start generation.");
+    $("generateBtn").disabled = false;
+    $("progress").style.display = "none";
+    return;
+  }
+  poll(data.job_id);
+}
+
+function poll(jobId) {
+  if (pollTimer) clearInterval(pollTimer);
+  pollTimer = setInterval(async () => {
+    let s;
+    try {
+      const r = await fetch("/api/status/" + jobId);
+      s = await r.json();
+    } catch (e) { return; }
+
+    $("bar").style.width = s.progress + "%";
+    $("stageLabel").textContent = s.stage_label + (s.status === "running" ? " …" : "");
+    $("stageSub").textContent = `Step ${s.stage_num}/${s.total_stages} · ${s.status}`;
+    renderSteps(s.stage_num, s.status);
+    if (s.log) {
+      const el = $("log");
+      el.textContent = s.log;
+      el.scrollTop = el.scrollHeight;
+    }
+
+    if (s.status === "done") {
+      clearInterval(pollTimer);
+      $("bar").style.width = "100%";
+      $("stageLabel").textContent = "✓ Done";
+      const src = "/api/video/" + jobId + "?t=" + Date.now();
+      const p = $("player");
+      p.src = src;
+      p.style.display = "block";
+      $("downloadLink").href = "/api/download/" + jobId;
+      $("actions").style.display = "flex";
+      $("generateBtn").disabled = false;
+    } else if (s.status === "error") {
+      clearInterval(pollTimer);
+      setError(s.error || "Generation failed. See log below.");
+      $("stageLabel").textContent = "✗ Failed";
+      $("generateBtn").disabled = false;
+    }
+  }, 1500);
+}
+
+const EXAMPLE = {
+  title: "web_demo",
+  description: "A short demo documentary about ants working together.",
+  profile: "macro_wonder",
+  fps: 30,
+  resolution: "1080x1920",
+  voice: "hi-IN-SwaraNeural",
+  language: "hi",
+  scenes: [
+    {
+      scene_id: 1,
+      title: "Introduction",
+      narration: "क्या आप जानते हैं कि लाखों छोटी चींटियाँ मिलकर बड़े-बड़े काम कर देती हैं?",
+      shots: [
+        {
+          shot_id: "1-1", shot_type: "real", duration_seconds: 5.0,
+          subject: "ants colony", action: "working together on forest floor",
+          environment: "tropical forest floor with leaves", camera_movement: "slow_pan",
+          mood: "awe"
+        }
+      ]
+    },
+    {
+      scene_id: 2,
+      title: "Teamwork",
+      narration: "हर चींटी एक छोटा-सा काम करती है, और यही मिलकर एक बड़ी ताकत बन जाती है।",
+      shots: [
+        {
+          shot_id: "2-1", shot_type: "real", duration_seconds: 5.0,
+          subject: "single ant", action: "carrying a large leaf",
+          environment: "jungle ground with leaf litter", camera_movement: "tracking",
+          mood: "wonder"
+        }
+      ]
+    }
+  ]
+};
+
+$("generateBtn").addEventListener("click", generate);
+$("exampleBtn").addEventListener("click", () => {
+  $("input").value = JSON.stringify(EXAMPLE, null, 2);
+  clearError();
+});
+$("clearBtn").addEventListener("click", () => { $("input").value = ""; clearError(); });
+$("againBtn").addEventListener("click", () => {
+  $("actions").style.display = "none";
+  $("player").style.display = "none";
+  $("progress").style.display = "none";
+  $("log").style.display = "none";
+  $("idle").style.display = "block";
+});
+
+loadConfig();
+</script>
+</body>
+</html>
